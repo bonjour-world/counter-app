@@ -1,0 +1,82 @@
+html{
+  height:100%;
+  overflow:hidden;
+  /*cursor:none;   only for tablet!*/
+}
+
+body {
+  
+  align-items: center;
+  margin: 0;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  margin:1%;
+  /*display:none; in release version */
+}
+
+nav ul li a{
+  font-size: 16px;
+  text-decoration: underline;
+  color:black;
+}
+
+nav ul li :hover{
+  font-size: 16px;
+  text-decoration: underline;
+  color:gray;
+}
+
+body{
+  align-items:center;
+  background-position:50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100%;
+  margin:0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#clickarea{
+  cursor:pointer;
+}
+
+#invisible{
+  background-color: rgba(255, 228, 196, 0);
+  width: 100px;
+  height:80px; 
+  position: absolute;
+ }
+
+img{width:20%;}
+.item {
+  width: 100%;
+  height: 50%;
+  display: flex;
+
+   /*border-color: rgb(96, 214, 81); */
+  background-color: rgba(18, 185, 40, 0);
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+}
+     h1{text-align: center; color:#000000; margin-bottom: 0;}
+    h2{color:#000000; }
+    h3{color:#000000; font-size: 10vw ;margin: 0;}
+    h4{color:#000000; font-size: 20vw ;margin: 0;}
+     #click{font-size: 400%;}
+     #takenumber{display:none;font-size: 400%;}
+     #borderinclude{border-bottom-color: gray;
+      border-bottom-style: solid;}

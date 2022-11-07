@@ -1,0 +1,28 @@
+* {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-content: center;
+    }
+    
+    
+    .centered {
+    text-align: center;
+    align-content: center;
+    }
+    
+    .number{
+    font-size: 130px;
+    margin: 5px 0;
+    }
+    
+    .ticket {
+    width: 70mm;
+    margin:0 auto;
+    max-width: 72mm;
+    }
+    
+    img {
+    max-width: 50%;
+    width: 50%;
+    }
