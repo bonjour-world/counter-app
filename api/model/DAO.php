@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: *");
 
 require_once "config/db.php";
 
-class DAO //data access objects sluzi da vraca podatke iz baze u formu klase, pomocu toga se mogu update-ovati podaci ili brisati iz baze
+class DAO
 {
 
     private $db;
@@ -32,7 +32,7 @@ class DAO //data access objects sluzi da vraca podatke iz baze u formu klase, po
      * @param 
      * @return array
      */
-    public function getCurrentNumber() //funkcija za dobijanje trenutnog broja
+    public function getCurrentNumber()
     {
         $statement = $this->db->prepare($this->GETCURRENTNUMBER);
         $result=$statement->execute();
@@ -62,7 +62,7 @@ class DAO //data access objects sluzi da vraca podatke iz baze u formu klase, po
      * @param $reserved_number
      * @return 
      */
-    public function updateCustomersData($reserved_number) //ne koristimo u ovom slucaju
+    public function updateCustomersData($reserved_number)
     {
         $statement = $this->db->prepare($this->UPDATECUSTOMERSDATA);
         $statement->bindValue(1, $reserved_number);
@@ -75,7 +75,7 @@ class DAO //data access objects sluzi da vraca podatke iz baze u formu klase, po
      * @param $current
      * @return 
      */
-    public function updateEmployeesData($current)//ne koristimo u ovom slucaju
+    public function updateEmployeesData($current)
     {
         $statement = $this->db->prepare($this->UPDATEEMPLOYEESDATA); 
         $statement->bindValue(1, $current);

@@ -7,11 +7,10 @@ class DB{
     {
         $settings['dbname'] = 'counter-app';
         $settings['dbhost'] = '127.0.0.1';
-        $settings['dbport'] = '3310';
+        $settings['dbport'] = '3306';
         $settings['dbuser'] = 'root';
         $settings['dbpass'] = '';
 
-        //povezivanje na lokalnu bazu
 
         try{
             $dsn = 'mysql:dbname=' . $settings['dbname'] . ';host=' . $settings['dbhost'].';port='.$settings['dbport'];
